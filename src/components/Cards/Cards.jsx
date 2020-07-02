@@ -1,16 +1,22 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid} from '@material-ui/core';
+import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
 import cx from 'classnames';
 
 import styles from './Cards.module.css';
+import { makeStyles } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
+export const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
-export const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
-
-    if(!confirmed){
-        return 'Loading...';
+    if (!confirmed) {
+        return (
+            <div>
+                <p>Loading...</p>
+                <CircularProgress />
+            </div>
+        )
     }
     return (
         <div className={styles.container}>

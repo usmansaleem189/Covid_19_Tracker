@@ -49,3 +49,18 @@ export const fetchCountries = async () => {
         console.log(error);
     }
 }
+
+export const fetchContinentData = async () => {
+    try {
+        const { data } = await axios.get(`https://corona.lmao.ninja/v2/continents?yesterday=true&sort`);
+
+        // const modifiedData = data.map((dailyData)=>({
+        //     confirmed: dailyData.confirmed.total,
+        //     deaths: dailyData.deaths.total,
+        //     date: dailyData.reportDate,
+        // }));
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}

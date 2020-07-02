@@ -1,4 +1,10 @@
-.formControl {
-    width: 30%;
+.FormControl {
+    width: 50%;
     margin-bottom: 30px !important;
+    align-self: center !important;
+}
+
+.NatControl {
+    font-size: x-large !important;
+    align-self: center !important;
 }
