@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 
 }
 
@@ -18,7 +19,14 @@ body {
     margin-top: 50px;
 }
 
-
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    /* flex-flow: row wrap; */
+    /* background-color: brown; */
+    width: 90%;
+    overflow-wrap: break-word;
+}
 
 
 
@@ -29,5 +37,9 @@ body {
 
     .image {
         width: 100%;
+    }
+
+    .flexcontainer {
+        flex-direction: column;
     }
 }

@@ -47,9 +47,11 @@ export const App = () => {
             <img className={styles.image} src={coronaImage} alt="COVID-19" />
             <Cards data={data} />
             <CountryPicker handleCountryChange={handleCountryChange} />
-            <Chart data={data} country={country} />
-            <div>
+            {/* <Chart data={data} country={country} /> */}
+            <div className={styles.flexcontainer}>
                 <Tables continent={continents_array} />
+                <Chart data={data} country={country} />
+
             </div>
         </div>
     )

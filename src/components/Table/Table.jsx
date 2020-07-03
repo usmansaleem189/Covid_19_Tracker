@@ -30,10 +30,17 @@ const StyledTableRow = withStyles((theme) => ({
 
 const useStyles = makeStyles({
     table: {
-         minWidth: 700,
-        //  width: '50%',
+        //  minWidth: 700,
+        //  display: "flex",
+        // justifyContent: "flex-start"
+         width: '100%',
         //  display: 'flex',
         //  justifyContent: 'center'
+        // justifyContent: 
+        margin: '0',
+        padding: '0',
+        border: '0',
+        // backgroundColor: 'rgb(235,235,235)' 
        
     },
 });
